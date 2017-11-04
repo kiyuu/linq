@@ -65,6 +65,7 @@ namespace LinqSample
             //     処理はforeachが行われてから実行されることを確認する。
             // https://github.com/dotnet/corefx/blob/master/src/System.Linq/src/System/Linq/Where.cs
             // .netCoreのWhereのソース72行目 yield returnしていることを確認する。
+            // またList<T>の拡張メソッドではなくEnumerableの拡張メソッドとして定義され、List<T>などはEnumerableの親クラスのメソッドを使用していることを確認する。
             #endregion
 
             // Q.2 FirstOrDefault Start~Endまでの出力結果はどうなりますか？
